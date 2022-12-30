@@ -1,0 +1,160 @@
+//  ========== container ============
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  // animation: apparition 0.8s ease-out;
+
+  & h1 {
+    margin-bottom: 5rem;
+  }
+}
+
+//  ========= logo =============
+.logo__middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  & img {
+    border-radius: 2rem;
+    box-shadow: 0 0 3rem 1rem rgb(255, 255, 255, 0.1);
+    margin: 4rem;
+    // transition: 0.5s ease-out;
+
+    &:hover {
+      box-shadow: 0 0 2rem 4rem rgb(255, 255, 255, 0.1);
+    }
+
+    @media screen and (max-width: 600px) {
+      width: 400px;
+      height: 400px;
+      margin: 5rem 0;
+    }
+  }
+}
+
+.top__container {
+  display: flex;
+  gap: 20rem;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.bot__container {
+  display: flex;
+  gap: 20rem;
+  margin-bottom: 2rem;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.presentation__page {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10rem);
+  position: relative;
+  top: -42.4rem;
+  margin-bottom: -35rem;
+  width: 28rem;
+  height: 35rem;
+  overflow: hidden;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+  padding: 2rem;
+  border-radius: 2rem;
+  display: none;
+  backdrop-filter: blur(25px);
+  animation: apparition 0.8s ease-out forwards;
+
+  & a {
+    color: black;
+  }
+
+  & p {
+    margin: 15px;
+  }
+
+  & ul {
+    list-style: none;
+  }
+
+  & .personnal__infos {
+    text-transform: initial;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+
+    .infos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & img {
+        width: 6rem;
+        border-radius: 50%;
+      }
+    }
+
+    .personnal__number {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+      margin: 0 0 2rem 1rem;
+    }
+
+    .personnal__mail {
+      margin-top: 3rem;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    top: -48.5rem;
+  }
+  @media screen and (max-width: 600px) {
+    width: 400px;
+    height: 500px;
+    font-size: 16px;
+    top: -36rem;
+    margin-bottom: -25rem;
+    padding: 0.3rem;
+
+    img {
+      display: none;
+    }
+  }
+}
+
+@keyframes apparition {
+  from {
+    opacity: 0;
+    transform: translateY(-70px);
+  }
+  to {
+    opacity: 1;
+    transform: (0);
+  }
+}
+
+@keyframes boxShadow {
+  from {
+    box-shadow: 0 0 3rem 1rem rgb(255, 255, 255, 0.1);
+  }
+  to {
+    box-shadow: 0 0 3rem 2rem rgb(255, 255, 255, 0.1);
+  }
+}

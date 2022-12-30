@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+}
+
+::selection {
+  color: crimson;
+}
+
+:root {
+  --color-primary: #6c63ff;
+  --color-sucess: #00bf8e;
+  --color-warning: #f7c94b;
+  --color-danger: #f75842;
+  --color-danger-variant: rgba(247, 88, 66, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.7);
+  --color-black: #000;
+  --color-bg: #1f2641;
+  --colog-bg1: #2e3267;
+  --colog-bg2: #424890;
+
+  --container-width-lg: 80%;
+  --container-width-md: 90%;
+  --container-width-sm: 94%;
+
+  --transition: all 400ms ease;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-family: "JetBrains Mono", monospace;
+
+  @media screen and (max-width: 600px) {
+    font-size: 16px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  @media screen and (max-width: 600px) {
+    font-size: 24px;
+  }
+}
